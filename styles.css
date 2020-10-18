@@ -1,0 +1,261 @@
+*{
+  padding:0;
+  margin:0;
+  text-decoration: none;
+  list-style:none;
+/*  box-sizing: border-box;*/
+}
+
+body {
+
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(28DaysLater.ttf);
+}
+.landing-page {
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(0deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.4)), url(Images/darkall.png);
+    background-size: cover;
+}
+
+.navbar{
+    float: right;
+    position: relative;
+    right: 30px;
+    top: 20px;
+}
+.closedbookicon{
+    width: 85px;
+    cursor: pointer;
+    position: relative;
+    left: 20px;
+}
+.bookicon {
+    width: 70px;
+    display: none;
+    cursor: pointer;
+    position: relative;
+    left: 70px;
+    padding-bottom: 20px;
+}
+
+.bookmark {
+    display: block;
+    padding: 10px 0;
+    width: 130px;
+    height: 70px;
+    position: relative;
+    left: 30px;
+    display: none;
+    cursor: pointer;
+
+}
+
+.title {
+    font-family: myFirstFont;
+    color: #D2D4D6;
+    font-size: 150px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    top: 10px;
+    left: 420px;
+    width: 200px;
+    text-align: center;
+    line-height: 140px;
+}
+
+#quote-sect {
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(197,179,88, 1);
+}
+
+.abc{
+    margin-left: 300px;
+}
+
+#comic-sect {
+  overflow: hidden;
+  background-image: url(Images/brickbg.jpg);
+  background-size: 1540px 750px;
+}
+
+#flipbook {
+  width: 900px !important;
+  height: 500px !important;
+  margin: 150px 0 100px 0px;
+   
+}
+
+.p1 {
+    padding-top: 120px;
+}
+
+.title {
+    padding-top: 100px;
+}
+
+.contents {
+    padding-top: 50px;
+    line-height: 30px;
+    text-align: left !important;
+    padding-left: 90px;
+}
+
+.preface {
+  position: relative;
+}
+
+.preface p{
+  position: absolute;
+    top: 50%;           
+    left: 50%;         
+    transform: translate(-50%, -50%);
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+}
+
+#flipbook .shadow,
+#flipbook.shadow{
+  -webkit-box-shadow: -0px 12px 60px 20px black;
+  -moz-box-shadow: -0px 12px 60px 20px black;
+  -ms-box-shadow: -0px 12px 60px 20px black;
+  -o-box-shadow: -0px 12px 60px 20px black;
+  box-shadow: -0px 12px 40px 20px black;
+/*transition: box-shadow 10s ease;*/
+}
+#flipbook .page {
+  width: 900px;
+  height: 500px;
+  background-color: white;
+/*  line-height: 300px;*/
+/*  font-size: 20px;*/
+  text-align: center;
+/*    padding-top: 100px*/
+  
+}
+
+
+#flipbook .page-wrapper {
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px;
+  -ms-perspective: 2000px;
+  -o-perspective: 2000px;
+  perspective: 2000px;
+/*
+    box-shadow: -10px 10px 10px grey !important;
+    transition: box-shadow 0.3s ease-in-out;
+*/
+
+}
+
+#flipbook .hard {
+  background-image: url(Images/blackbook1.png) !important;
+    background-size: cover;
+  color: goldenrod;
+  -webkit-box-shadow: inset 0 0 5px #666;
+  -moz-box-shadow: inset 0 0 5px #666;
+  -o-box-shadow: inset 0 0 5px #666;
+  -ms-box-shadow: inset 0 0 5px #666;
+  box-shadow: inset 0 0 5px #666;
+  font-weight: bold;
+}
+
+/*
+#flipbook .hard {
+  background-image: url(fibookcover.png)!important;
+  color: #333;
+  -webkit-box-shadow: inset 0 0 5px #666;
+  -moz-box-shadow: inset 0 0 5px #666;
+  -o-box-shadow: inset 0 0 5px #666;
+  -ms-box-shadow: inset 0 0 5px #666;
+  box-shadow: inset 0 0 5px #666;
+  font-weight: bold;
+
+}
+*/
+
+#flipbook .odd {
+  background: -webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+  background-image: -webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+  background-image: -moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+  background-image: -ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+  background-image: -o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+  background-image: linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+  -webkit-box-shadow: inset 0 0 5px #666;
+  -moz-box-shadow: inset 0 0 5px #666;
+  -o-box-shadow: inset 0 0 5px #666;
+  -ms-box-shadow: inset 0 0 5px #666;
+  box-shadow: inset 0 0 5px #666;
+/*  background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));*/
+/*    background: rgba()*/
+}
+
+#flipbook .even {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+  background-image: -webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+  background-image: -moz-linear-gradient(left, #fff 95%, #dadada 100%);
+  background-image: -ms-linear-gradient(left, #fff 95%, #dadada 100%);
+  background-image: -o-linear-gradient(left, #fff 95%, #dadada 100%);
+  background-image: linear-gradient(left, #fff 95%, #dadada 100%);
+  -webkit-box-shadow: inset 0 0 5px #666;
+  -moz-box-shadow: inset 0 0 5px #666;
+  -o-box-shadow: inset 0 0 5px #666;
+  -ms-box-shadow: inset 0 0 5px #666;
+  box-shadow: inset 0 0 5px #666;
+/*  background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(greypaper.jpg);*/
+}
+
+#team-sect {
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(197,179,88, 1);
+}
+
+#about-sect {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background:linear-gradient(0deg, rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url(Images/abbg.jpg);
+/*    background-size: cover;*/
+    width: 14=0px
+}
+
+.abouttitle {
+    font-family: myFirstFont;
+    color: #603636;
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+/*    align-items: center;*/
+/*
+    position: relative;
+    top: 150px;
+*/
+}
+
+.abouttext {
+    background-image: url(Images/aboutbg3.png);
+    background-size: cover;
+    width: 600px;
+    height: 80vh;
+/*
+    display: flex;
+    align-items: center;
+*/
+}
+
+
+
+#footer {
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(197,179,88, 1);
+}
