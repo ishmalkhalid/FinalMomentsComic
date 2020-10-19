@@ -110,7 +110,7 @@ video {
 }
 
 .abc{
-    margin-left: 300px;
+    margin-left: 290px;
 }
 
 #comic-sect {
@@ -123,9 +123,8 @@ video {
 #flipbook {
   width: 900px !important;
   height: 500px !important;
-  margin: 10% 0 100px 0px;
-  transform: translate(-50%, 0);
-   
+  margin: 14% 0 100px 0px;
+  transform: translate(-50%, 0);   
 }
 
 .p1 {
