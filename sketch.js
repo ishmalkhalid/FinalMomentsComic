@@ -9,20 +9,25 @@ function setup() {
   canvas.position(0,0);
   canvas.style('z-index', '-1');
   img = loadImage('Images/walking.png');
+  bg = loadImage('Images/alley.png');
 }
 
 let pos = 50;
 
-let cuts = [[0, 0],[300,0],[556,0],[0,299],[300,299],[556,299]];
+let cuts = [[0, 0],[300,0],[556,0],[0,345],[280,345],[536,345]];
 
 let c = 0;
 let dc = 0;
 
 function draw() {
-  background(255, 50);
+  background(0);
+  imageMode(CORNER);
+  image(bg, 0,0,width,height);
+  fill(0,10);
+  rect(0,0,width,height);
   fill(0);
   imageMode(CENTER);
-  image(img, pos, height*0.7, 200, 299, cuts[c][0], cuts[c][1], 200, 299);
+  image(img, pos, height*0.8, 200, 299, cuts[c][0], cuts[c][1], 200, 299);
 }
 
 function mouseWheel(event) {
@@ -42,9 +47,10 @@ function mouseWheel(event) {
       pos = 50;
     }
     if(pos > width+50){
-      pos = width+50;
+      pos = width+100;
     }
-    //uncomment to block page scrolling
-    //return false;
+    if(pos < width+50){
+      return false;
+    }
   }
 }
