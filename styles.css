@@ -81,7 +81,7 @@ body {
 
 .title {
     font-family: myFirstFont;
-    color: #ffffff;
+    color: #D2D4D6;
     font-size: 150px;
     display: flex;
     /* justify-content: center; */
@@ -123,10 +123,10 @@ video {
 #flipbook {
   width: 900px !important;
   height: 500px !important;
-  margin: 14% 0 100px 0px;
+  margin: 13% 0 100px 0px;
   transform: translate(-50%, 0);   
 }
-
+S
 .p1 {
     padding-top: 120px;
 }
