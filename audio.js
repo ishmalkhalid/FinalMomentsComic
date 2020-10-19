@@ -1,3 +1,5 @@
+
+$(document).ready(function(){
 $(".coffee").click(function(){
 	$("<audio></audio>").attr({ 
 		'src':'sounds/coffee.mp3', 
@@ -28,4 +30,5 @@ $(".phone").click(function(){
 		'volume':0.4,
 		'autoplay':'autoplay'
 	}).appendTo(".phone");
+});
 });
