@@ -58,23 +58,47 @@
                     <p>When will your last moment come?<br>
                     When it does, will the people in your life know?</p>
                 </div>
-                <div class="ambulance"><img class="panel sound" src="Images/panel-1.png"></div>
-                <div class="coffee"><img class="panel sound" src="Images/panel-2.png"></div>
-                <div class="office"><img class="panel sound" src="Images/panel-3.png"></div>
-                <div class="phone"><img class="panel sound" src="Images/panel-4.png"></div>
-                <script>
-                    $(".phone").click(function(){
-                        $("<audio></audio>").attr({ 
-                            'src':'sounds/phone.mp3', 
-                            'volume':0.4,
-                            'autoplay':'autoplay'
-                        }).appendTo(".phone");
-                    });
-                </script>
+                <div class="ambulance">
+                    <img class="panel sound" src="Images/panel-1.png">
+                    <audio id="ambsound" src="sounds/ambulance.mp3" volume="0.4"></audio>
+                </div>
+                <div class="coffee">
+                    <img class="panel sound" src="Images/panel-2.png">
+                    <audio id="cofsound" src="sounds/coffee.mp3" volume="0.4"></audio>
+                </div>
+                <div class="office">
+                    <img class="panel sound" src="Images/panel-3.png">
+                    <audio id="offsound" src="sounds/office.mp3" volume="0.4"></audio>
+                </div>
+                <div class="phone">
+                    <img class="panel sound" src="Images/panel-4.png">
+                    <audio id="phonesound" src="sounds/phone.mp3" volume="0.4"></audio>
+                </div>
                 <div><img class="panel" src="Images/panel-5.png"></div>
                 <div class="hard"></div>
                 <div class="hard"></div>
-
+                <script>
+                    $(".ambulance").click(function(){
+                        var sounds = document.getElementsByTagName('audio');
+                        for(let i=0; i<sounds.length; i++) sounds[i].pause();
+                        document.getElementById("ambsound").play();
+                    });
+                    $(".coffee").click(function(){
+                        var sounds = document.getElementsByTagName('audio');
+                        for(let i=0; i<sounds.length; i++) sounds[i].pause();
+                        document.getElementById("cofsound").play();
+                    });
+                    $(".office").click(function(){
+                        var sounds = document.getElementsByTagName('audio');
+                        for(let i=0; i<sounds.length; i++) sounds[i].pause();
+                        document.getElementById("offsound").play();
+                    });
+                    $(".phone").click(function(){
+                        var sounds = document.getElementsByTagName('audio');
+                        for(let i=0; i<sounds.length; i++) sounds[i].pause();
+                        document.getElementById("phonesound").play();
+                    });
+                </script>
             </div>
         </div>
     </section>
