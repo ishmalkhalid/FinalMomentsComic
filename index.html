@@ -10,7 +10,8 @@
     <script src="p5.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -20,26 +21,37 @@
                 <img id = "closedbook" class="closedbookicon" src="Images/closedbookicon.png" alt="closedbookicon">
                 <img id = "openbook" class="bookicon" src="Images/book.png" alt="bookicon">
             </div>
-            <div>
-              <img id="bookmark1" class="bookmark" src="Images/bookmark.png" alt="bookmark">
-              <img id="bookmark2" class="bookmark" src="Images/bookmark.png" alt="bookmark">
-              <img id="bookmark3" class="bookmark" src="Images/bookmark.png" alt="bookmark">
-              <img id="bookmark4" class="bookmark" src="Images/bookmark.png" alt="bookmark">
+            <div>     
+                <img id="bookmark1" class="bookmark" src="Images/bookmark.png" alt="bookmark">
+                <div class="bookmarktxt"> 
+                    <a href="#comic-sect"><h6 id="one" style="color:black;">COMIC</h6></a>
+                </div>
+                
+                <img id="bookmark2" class="bookmark" src="Images/bookmark.png" alt="bookmark">
+                <div class="bookmarktxt"> 
+                    <a href="#team-sect"><h6 id="two" style="color:black;">TEAM</h6></a>
+                </div>
+                
+                <img id="bookmark3" class="bookmark" src="Images/bookmark.png" alt="bookmark">
+                <div class="bookmarktxt"> 
+                    <a href="#about-sect" ><h6 id="three" style="color:black;">ABOUT</h6></a>
+                </div>
+<!--              <img id="bookmark4" class="bookmark" src="Images/bookmark.png" alt="bookmark">-->
             </div>
         </nav>
         <div class="title">FINAL MOMENTS</div>
     </section>
 
     <section id="quote-sect">
-        
+        <video id="video" src="Images/quotevid.mp4" playsinline loop></video>
     </section>
     
     <script src="sketch.js"></script>
 
     <section id="comic-sect">
-        <div class = 'abc'>  
+        <div class = 'abc' data-aos ="zoom-in-up" data-aos-offset="200" data-aos-duration="500">  
             <div id="flipbook">
-                <div class="hard"> Last Moments </div> 
+                <div class="hard booktitle"> Last Moments </div> 
                 <div class="hard"></div>
                 <div class="preface">
                     <p>When will your last moment come?<br>
@@ -50,25 +62,58 @@
                 <div><img class="panel" src="Images/panel-3.png"></div>
                 <div><img class="panel" src="Images/panel-4.png"></div>
                 <div><img class="panel" src="Images/panel-5.png"></div>
-                <div> Page 4 </div>
                 <div class="hard"></div>
                 <div class="hard"></div>
+
             </div>
         </div>
     </section>
     
     <section id="team-sect">
-        
+        <div class="team" data-aos ="zoom-in-up" data-aos-delay = "200"> OUR TEAM</div>
+        <div class="members">
+            <div data-aos ="flip-right" data-aos-delay = "200">
+                <img width="40%" src="Images/ishmalimg.png" alt="">
+                <div><h2>Ishmal Khalid</h2></div>
+                <div>Web Developer</div>
+            </div>
+
+            <div data-aos ="flip-right" data-aos-delay = "200">
+                <img width="40%" src="Images/ishmalimg.png" alt="">
+                <div><h2>Matthew Varona</h2></div>
+                <div>Web Developer</div>
+            </div>
+
+            <div data-aos ="flip-right" data-aos-delay = "200">
+                <img width="40%" src="Images/ishmalimg.png" alt="">
+                <div><h2>Thanh Loan Hoang</h2></div>
+                <div>Scriptwriter</div>
+            </div>
+
+            <div data-aos ="flip-right" data-aos-delay = "200">
+                <img width="40%" src="Images/ishmalimg.png" alt="">
+                <div><h2>Michael Leo</h2></div>
+                <div>Illustrator</div>
+            </div>
+        </div>
     </section>
     
-    <section id="about-sect">
-        <div class="abouttitle">About us</div>
+    <section id="about-sect" >
+        <div class="abouttitle" data-aos ="zoom-in-up" data-aos-delay = "200">About us</div>
 <!--        <div><img src="Images/comicx.png"></div>-->
-        <div class="abouttext">Lorem ipsum dipsum shipshum</div>
+<!--        <div class="abouttext" data-aos ="fade-up-right" data-aos-delay = "200" style = "color: yellow;">Lorem ipsum dipsum shipshum</div>-->
+        <div class="aboutetxt" data-aos ="zoom-in-up" data-aos-delay = "200"> 
+            <p>wht anjan anaj?</p>
+            <p>nefbuibrv hfebgryivb rbguirfv n verygruijvnrg rughrughv rghruhvbruvn bhgurghbhhfeugvb ehuewfhuigbv jfghrughvubgeruv urhighbrugrgib fugheribn gjerghrjg ehhrg utwuighwrghr geri ir iowig erugugw grg.</p>
+            <p>wht anjan anaj?</p>
+            <p>nefbuibrv hfebgryivb rbguirfv n verygruijvnrg rughrughv rghruhvbruvn bhgurghbhhfeugvb ehuewfhuigbv jfghrughvubgeruv urhighbrugrgib fugheribn gjerghrjg ehhrg utwuighwrghr geri ir iowig erugugw grg.</p>
+        </div>
+        
+        <div><img class="aboutimage" src="Images/aboutbook.png" data-aos ="zoom-in-up" data-aos-delay = "200"></div>
     </section>
     
     <section id="footer">
-        
+        <div>COPYRIGHT &copy 2020 FINAL MOMENTS All Rights Reserved.</div>
     </section>
     
 <script src="turn.js"></script>
@@ -80,7 +125,12 @@ $("#flipbook").turn({
     autoCenter: true
 });
 </script>
-
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type = "text/javascript">
+  AOS.init();
+</script>
+    
 <script src="script.js"></script>
 </body>
 </html>
