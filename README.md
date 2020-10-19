@@ -1,4 +1,6 @@
 # Comic thing
+# ISHMAL KHALID 
+# 19/10/2020
 
 Project Name: LAST MOMENTS
 
