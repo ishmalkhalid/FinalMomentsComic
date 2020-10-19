@@ -62,6 +62,15 @@
                 <div class="coffee"><img class="panel sound" src="Images/panel-2.png"></div>
                 <div class="office"><img class="panel sound" src="Images/panel-3.png"></div>
                 <div class="phone"><img class="panel sound" src="Images/panel-4.png"></div>
+                <script>
+                    $(".phone").click(function(){
+                        $("<audio></audio>").attr({ 
+                            'src':'sounds/phone.mp3', 
+                            'volume':0.4,
+                            'autoplay':'autoplay'
+                        }).appendTo(".phone");
+                    });
+                </script>
                 <div><img class="panel" src="Images/panel-5.png"></div>
                 <div class="hard"></div>
                 <div class="hard"></div>
