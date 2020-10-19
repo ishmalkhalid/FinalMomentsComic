@@ -109,6 +109,11 @@ video {
     height: 55vh;
 }
 
+#flatline {
+  width: 100%;
+  height: 100%;
+}
+
 .abc{
     margin-left: 300px;
 }
