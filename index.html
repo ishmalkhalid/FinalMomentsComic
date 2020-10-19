@@ -44,7 +44,7 @@
     </section>
 
     <section id="quote-sect">
-        <video id="video" src="Images/quotevid.mp4" playsinline loop></video>
+        <video id="video" src="Images/quotevid.mp4" playsinline loop muted></video>
     </section>
     
     <script src="sketch.js"></script>
@@ -58,10 +58,10 @@
                     <p>When will your last moment come?<br>
                     When it does, will the people in your life know?</p>
                 </div>
-                <div><img class="panel" src="Images/panel-1.png"></div>
-                <div><img class="panel" src="Images/panel-2.png"></div>
-                <div><img class="panel" src="Images/panel-3.png"></div>
-                <div><img class="panel" src="Images/panel-4.png"></div>
+                <div><img id="ambulance" class="panel sound" src="Images/panel-1.png"></div>
+                <div><img id="coffee" class="panel sound" src="Images/panel-2.png"></div>
+                <div><img id="office" class="panel sound" src="Images/panel-3.png"></div>
+                <div><img id="phone" class="panel sound" src="Images/panel-4.png"></div>
                 <div><img class="panel" src="Images/panel-5.png"></div>
                 <div class="hard"></div>
                 <div class="hard"></div>
@@ -132,6 +132,7 @@
       AOS.init();
     </script>
         
+    <script src="audio.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

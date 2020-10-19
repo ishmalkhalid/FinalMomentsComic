@@ -23,11 +23,11 @@ function draw() {
   background(0);
   imageMode(CORNER);
   image(bg, 0,0,width,height);
-  fill(0,10);
+  fill(0,0,255,10);
   rect(0,0,width,height);
   fill(0);
   imageMode(CENTER);
-  image(img, pos, height*0.8, 200, 299, cuts[c][0], cuts[c][1], 200, 299);
+  image(img, pos, height*0.75, 200, 299, cuts[c][0], cuts[c][1], 200, 299);
 }
 
 function mouseWheel(event) {
