@@ -1,4 +1,4 @@
-# Comic thing
+# Comic project
 # ISHMAL KHALID 
 # 19/10/2020
 
